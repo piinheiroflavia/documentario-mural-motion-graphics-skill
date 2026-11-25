@@ -1,4 +1,4 @@
-# documentario-mural-motion-graphics
+# documentario-mural-motion-graphics-skill
 
 Skill para o **Claude Code** que produz vídeos documentários educativos em **motion graphics 2.5D**, no estilo "mural de investigação" (tachinhas, fio vermelho, mapas e fotos de arquivo) com toques do "estilo Vox" (retícula, duotone, recortes em camadas).
 
@@ -50,7 +50,11 @@ Tudo é animado em código: nenhuma imagem é gerada por IA. As fotos, gravuras 
 
 ## Instalação
 
-1. Copie esta pasta para `~/.claude/skills/documentario-mural-motion-graphics/` (ou para `.claude/skills/` do seu projeto).
+1. Clone o repositório na pasta de skills do Claude Code:
+   ```bash
+   git clone https://github.com/piinheiroflavia/documentario-mural-motion-graphics-skill ~/.claude/skills/documentario-mural-motion-graphics
+   ```
+   Para usar só num projeto, clone em `SEU_PROJETO/.claude/skills/documentario-mural-motion-graphics`. O nome da pasta pode ser qualquer um; a skill se chama `documentario-mural-motion-graphics` (definido no `SKILL.md`).
 2. Dependências:
    ```bash
    pip install -r requirements.txt
