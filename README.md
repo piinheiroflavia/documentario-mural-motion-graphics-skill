@@ -6,6 +6,36 @@ Tudo é animado em código: nenhuma imagem é gerada por IA. As fotos, gravuras 
 
 > *English summary:* a Claude Code skill that turns a script into a ~10-minute 2.5D "investigation board" documentary (1920×1080), with continuous camera, public-domain archive images pinned with red string, animated maps, timeline, narrated chapters (Kokoro TTS), automatic layout QA, two thumbnail options, and vertical Vox-style Shorts. Channel identity (name, voice, language, on-screen labels) lives in a profile JSON — see `perfis/default-en.json`.
 
+
+## Como fica
+
+![Câmera contínua sobre o mural](docs/camera-continua.gif)
+
+*Câmera contínua: a câmera desliza pelo mural, aproxima nos detalhes e se afasta para o mapa, sem cortes.*
+
+| | |
+|---|---|
+| ![Título](docs/01-titulo.jpg) | ![Polaroide e fios](docs/02-polaroide-e-fios.jpg) |
+| **Abertura** com marca-texto no título e gravura presa com tachinha | **Fios vermelhos** ligando as pistas, polaroide e lista dos capítulos |
+| ![Capítulo](docs/03-capitulo.jpg) | ![Mapa com fotos](docs/04-mapa-com-fotos.jpg) |
+| **Cartão de capítulo** sobre foto grande, narrado | **Mapa animado** com fotos presas no lugar exato e anotação à mão |
+| ![Mosaico e notas](docs/05-mosaico-e-notas.jpg) | ![Rota no mapa](docs/06-rota-no-mapa.jpg) |
+| **Imagem de acervo** com notas e linha do tempo fixa no rodapé | **Rota animada** e caixa "palavra-chave" |
+| ![Recorte de jornal](docs/07-recorte-de-jornal.jpg) | ![Capa cortiça](docs/capa-cortica.jpg) |
+| **Recorte de jornal** com trecho sublinhado | **Capa — opção 1 (cortiça)** |
+| ![Capa mesa escura](docs/capa-mesa-escura.jpg) | <img src="docs/capa-short.jpg" width="220"> |
+| **Capa — opção 2 (mesa escura)** | **Capa do Short** (estilo Vox) |
+
+**Temas de mural** — cortiça (história), quadro branco com tachinhas azuis (ciência) e caderno pautado (corpo humano / "como funciona"):
+
+![Temas de mural](docs/temas-de-mural.jpg)
+
+**Shorts verticais no estilo Vox**, tirados do vídeo longo (retícula, duotone, letras com imagem dentro, recortes em camadas, setas à mão, etiquetas):
+
+![Short estilo Vox](docs/short-estilo-vox.jpg)
+
+*Imagens do exemplo: The Met Open Access e Library of Congress (domínio público); mapa base Natural Earth.*
+
 ## O que ela faz
 
 - **Vídeo longo** horizontal (1920×1080, ~10 min) com câmera contínua sobre o mural, profundidade 2.5D e fundo desfocado.
