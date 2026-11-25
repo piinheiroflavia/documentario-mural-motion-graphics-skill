@@ -1,0 +1,29 @@
+{"de":"c1a","ate":"c1e","cenas":[
+ {"de":"c1a","ate":"c1b","pan":1,"camadas":[
+  {"tipo":"foto","src":"raw_pineta.jpg","x":-40,"y":980,"w":1160,"h":900,"duo":"azul","z":0.2,"at":0},
+  {"tipo":"serif","html":"Olha só <i>isso</i>…","x":90,"y":250,"size":68,"at":0.4},
+  {"tipo":"letras","txt":"476","src":"raw_palazzo.jpg","x":60,"y":360,"size":430,"z":0.5,"at":0.2},
+  {"tipo":"etiqueta","txt":"RAVENA, ITÁLIA","x":120,"y":860,"at":1.4,"rot":-4},
+  {"tipo":"seta","d":"M760 300 C900 420 900 620 760 760 M760 760 l10 -70 M760 760 l70 -20","z":0.6,"at":2.4}]},
+ {"de":"c1b","ate":"c1c","pan":-1,"camadas":[
+  {"tipo":"foto","src":"raw_soldiers.jpg","x":-60,"y":160,"w":1200,"h":1100,"duo":"sepia","rasgado":true,"z":0.2,"at":0},
+  {"tipo":"recorte","src":"relief.png","x":520,"y":880,"w":540,"z":0.8,"at":0.6,"rot":3},
+  {"tipo":"etiqueta","txt":"ODOACRO","x":90,"y":1180,"at":1.2},
+  {"tipo":"mao","txt":"um general…<br>não um imperador","x":90,"y":1290,"at":2.0,"rot":-4},
+  {"tipo":"circulo","d":"M720 380 C640 330 560 420 600 500 C640 590 820 580 840 480 C860 400 790 350 720 380","at":1.6}]},
+ {"de":"c1c","ate":"c1d","pan":1,"camadas":[
+  {"tipo":"foto","src":"raw_apollinare.jpg","x":0,"y":0,"w":1080,"h":1250,"duo":"verm","z":0.2,"at":0},
+  {"tipo":"recorte","src":"augusto.png","x":260,"y":560,"w":560,"z":0.8,"at":0.4},
+  {"tipo":"serif","html":"Rômulo Augústulo,<br><i>um adolescente</i>","x":70,"y":1260,"size":76,"at":1.0},
+  {"tipo":"etiqueta","txt":"SEM BATALHA FINAL","x":520,"y":200,"at":3.0,"rot":5}]},
+ {"de":"c1d","ate":"c1e","pan":-1,"camadas":[
+  {"tipo":"foto","src":"raw_map1725_const.jpg","x":-80,"y":220,"w":1240,"h":1100,"duo":"sepia","rasgado":true,"z":0.2,"at":0},
+  {"tipo":"traco","d":"M140 520 C420 300 700 760 940 640","cor":"#1C2A3A","esp":10,"z":0.4,"at":0.8,"dur":2.0},
+  {"tipo":"recorte","src":"constantino.png","x":620,"y":930,"w":420,"z":0.8,"at":2.2,"rot":-3},
+  {"tipo":"etiqueta","txt":"→ CONSTANTINOPLA","x":80,"y":1360,"at":1.6},
+  {"tipo":"mao","txt":"as insígnias<br>vão embora","x":80,"y":1470,"at":2.6,"rot":-3}]},
+ {"de":"c1e","ate":"FIM","pan":1,"camadas":[
+  {"tipo":"foto","src":"raw_golden.jpg","x":-40,"y":1050,"w":1160,"h":900,"duo":"azul","z":0.2,"at":0},
+  {"tipo":"jornal","nome":"CRÔNICA DO IMPÉRIO","data":"ANO 476","titulo":"O Ocidente fica sem imperador","texto":"Odoacro envia as insígnias a Constantinopla: <mark data-at=\"1.0\">o Ocidente não precisa mais de um imperador próprio.</mark>","x":90,"y":240,"w":900,"rot":-2,"at":0.1},
+  {"tipo":"mao","txt":"(ilustração do canal)","x":420,"y":960,"at":0.8}]}
+]}

@@ -1,0 +1,22 @@
+{
+ "canal": {"nome": "Meu Canal", "handle": "@meucanal"},
+ "voz": {"kokoro": "pm_alex", "lang": "pt-br", "velocidade": 0.9},
+ "tema_padrao": "cortica",
+ "vinheta": {
+  "imagem": null,
+  "itens": [["👍", "Curta o vídeo"], ["🔔", "Inscreva-se no canal"], ["↗", "Compartilhe com quem gosta de história"]]
+ },
+ "textos": {
+  "palavra_chave": "PALAVRA-CHAVE",
+  "voce_sabia": "VOCÊ SABIA?",
+  "onde_fica": "ONDE FICA",
+  "para_ter_ideia": "PARA TER UMA IDEIA",
+  "neste_video": "NESTE VÍDEO",
+  "recapitulando": "Recapitulando",
+  "fonte_da_epoca": "FONTE DA ÉPOCA",
+  "comente": "Conta aqui nos comentários 👇",
+  "video_completo": "VÍDEO COMPLETO NO CANAL ▶",
+  "credito_mapa": "Mapa base: Natural Earth (domínio público) · fronteiras aproximadas",
+  "olha_so": "Olha só <i>isso</i>…"
+ }
+}

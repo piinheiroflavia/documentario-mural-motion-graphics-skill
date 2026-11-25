@@ -1,0 +1,8 @@
+{
+  "name": "documentario-mural-motion-graphics",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Skill do Claude Code para documentários em motion graphics 2.5D estilo mural de investigação",
+  "license": "MIT",
+  "dependencies": { "playwright": "^1.47.0" }
+}

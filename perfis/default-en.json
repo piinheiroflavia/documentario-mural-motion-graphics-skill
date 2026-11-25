@@ -1,0 +1,22 @@
+{
+ "canal": {"nome": "My Channel", "handle": "@mychannel"},
+ "voz": {"kokoro": "am_michael", "lang": "en-us", "velocidade": 0.95},
+ "tema_padrao": "cortica",
+ "vinheta": {
+  "imagem": null,
+  "itens": [["👍", "Like the video"], ["🔔", "Subscribe to the channel"], ["↗", "Share it with a history lover"]]
+ },
+ "textos": {
+  "palavra_chave": "KEY TERM",
+  "voce_sabia": "DID YOU KNOW?",
+  "onde_fica": "WHERE IS IT",
+  "para_ter_ideia": "TO GIVE YOU AN IDEA",
+  "neste_video": "IN THIS VIDEO",
+  "recapitulando": "Recap",
+  "fonte_da_epoca": "PRIMARY SOURCE",
+  "comente": "Tell me in the comments 👇",
+  "video_completo": "FULL VIDEO ON THE CHANNEL ▶",
+  "credito_mapa": "Base map: Natural Earth (public domain) · approximate borders",
+  "olha_so": "Look at <i>this</i>…"
+ }
+}

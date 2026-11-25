@@ -1,0 +1,45 @@
+<!doctype html><html><head><meta charset="utf-8">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700;1,900&family=Archivo:wght@800;900&family=Archivo+Black&family=Caveat:wght@700&display=swap">
+<style>
+html,body{margin:0;background:#000}
+#st{position:relative;overflow:hidden;background:#ECE5D5}
+.paper{position:absolute;inset:0;background:#ECE5D5;background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='300' height='300'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='3' seed='5'/><feColorMatrix values='0 0 0 0 .45 0 0 0 0 .4 0 0 0 0 .32 0 0 0 .35 0'/></filter><rect width='300' height='300' filter='url(%23n)'/></svg>")}
+.ht{position:absolute;overflow:hidden;isolation:isolate}
+.ht img{width:100%;height:100%;object-fit:cover;display:block;filter:grayscale(1) contrast(1.4) brightness(.95)}
+.ht::after{content:"";position:absolute;inset:0;background-image:radial-gradient(circle,rgba(0,0,0,.55) 38%,rgba(0,0,0,0) 42%);background-size:8px 8px;mix-blend-mode:multiply;opacity:.5}
+.ht::before{content:"";position:absolute;inset:0;z-index:1;mix-blend-mode:screen;background:var(--duo,transparent)}
+.cut{position:absolute;filter:drop-shadow(7px 0 0 #F7F2E6) drop-shadow(-7px 0 0 #F7F2E6) drop-shadow(0 7px 0 #F7F2E6) drop-shadow(0 -7px 0 #F7F2E6) drop-shadow(24px 30px 22px rgba(0,0,0,.45))}
+.big{position:absolute;font-family:'Playfair Display',serif;font-weight:900;line-height:.86;letter-spacing:-.03em;white-space:nowrap}
+.fill{color:transparent;-webkit-background-clip:text;background-clip:text;background-size:cover;background-position:center}
+.stroke{-webkit-text-stroke:6px #121212;paint-order:stroke fill}
+.lbl{position:absolute;font:900 54px Archivo,sans-serif;background:#E8602C;color:#FFF7EC;padding:12px 28px;box-shadow:8px 10px 0 rgba(0,0,0,.25);white-space:nowrap}
+.hand{position:absolute;font:700 1px/1 'Caveat',cursive;white-space:nowrap}
+.torn{clip-path:polygon(0 1.5%,6% 0,14% 1.4%,25% 0,37% 1.2%,50% 0,63% 1.5%,76% 0,88% 1.3%,100% 0,100% 98.5%,90% 100%,78% 98.6%,64% 100%,50% 98.4%,36% 100%,22% 98.7%,9% 100%,0 98.6%)}
+svg.ov{position:absolute;left:0;top:0;overflow:visible}
+#grain{position:absolute;inset:0;opacity:.13;mix-blend-mode:multiply;background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='300' height='300'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='3'/></filter><rect width='300' height='300' filter='url(%23n)'/></svg>")}
+.cork{position:absolute;inset:0;background-color:#9C7650;background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='260' height='260'><filter id='a'><feTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='4' seed='7'/><feColorMatrix values='0 0 0 0 .32  0 0 0 0 .2  0 0 0 0 .1  0 0 0 1.6 -.45'/></filter><rect width='260' height='260' filter='url(%23a)'/></svg>"),url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='900' height='900'><filter id='b'><feTurbulence type='fractalNoise' baseFrequency='.012' numOctaves='3' seed='2'/><feColorMatrix values='0 0 0 0 .25  0 0 0 0 .15  0 0 0 0 .07  0 0 0 1.2 -.3'/></filter><rect width='900' height='900' filter='url(%23b)'/></svg>")}
+.cork::after{content:"";position:absolute;inset:0;background:radial-gradient(ellipse at 45% 40%,rgba(255,225,170,.25),rgba(0,0,0,0) 55%),radial-gradient(ellipse at 50% 50%,rgba(0,0,0,0) 45%,rgba(20,10,4,.6) 100%)}
+.matdark{position:absolute;inset:0;background:#211C24;background-image:radial-gradient(ellipse 60% 60% at 40% 40%,rgba(255,210,140,.32),rgba(0,0,0,0) 70%),radial-gradient(ellipse at 50% 50%,rgba(0,0,0,0) 50%,rgba(0,0,0,.6) 100%)}
+.pp{position:absolute;filter:drop-shadow(12px 16px 10px rgba(0,0,0,.45))}
+.note{position:absolute;background:#F4EBD6;box-shadow:10px 14px 12px rgba(0,0,0,.35);padding:14px 26px}
+</style></head><body><div id="st"><div class="paper"></div><div id="L"></div><div id="grain"></div></div>
+<script>
+const C=__CFG__; const st=document.getElementById('st'); st.style.width=C.w+'px'; st.style.height=C.h+'px'; let h='';
+const DUO={azul:'#2F5F92',sepia:'#7A5230',verm:'#A2281E',verde:'#2E6B5A',preto:'transparent'};
+const PIN=(x,y,s,r)=>`<svg class="ov" width="10" height="10"><g transform="translate(${x} ${y}) scale(${s||1.6}) rotate(${r||0})"><ellipse cx="22" cy="12" rx="20" ry="9" fill="rgba(0,0,0,.35)"/><ellipse cx="0" cy="0" rx="15" ry="7" fill="#8E1712"/><ellipse cx="0" cy="-2" rx="15" ry="7" fill="#C2281F"/><path d="M-6 -4 L6 1 L22 -30 L11 -35 Z" fill="#B3221B"/><path d="M-2 -3 L3 -1 L17 -31 L13 -33 Z" fill="rgba(255,255,255,.3)"/><ellipse cx="17" cy="-34" rx="19" ry="10" transform="rotate(-28 17 -34)" fill="#9C1A14"/><ellipse cx="17" cy="-37" rx="19" ry="10" transform="rotate(-28 17 -37)" fill="#D9372D"/><ellipse cx="11" cy="-41" rx="7" ry="3.5" transform="rotate(-28 11 -41)" fill="rgba(255,255,255,.6)"/></g></svg>`;
+for(const L of C.camadas){const pos=`left:${L.x}px;top:${L.y}px;`+(L.rot?`transform:rotate(${L.rot}deg);`:'');
+ if(L.tipo==='foto') h+=`<div class="ht ${L.rasgado?'torn':''}" style="${pos}width:${L.w}px;height:${L.h}px;--duo:${DUO[L.duo]||'transparent'};${L.clip?'clip-path:'+L.clip:''}"><img src="A/${L.src}" style="object-position:${L.op||'center'}"></div>`;
+ else if(L.tipo==='recorte') h+=`<img class="cut" src="A/${L.src}" style="${pos}width:${L.w}px">`;
+ else if(L.tipo==='letras') h+=`<div class="big ${L.src?'fill':''} ${L.contorno?'stroke':''}" style="${pos}font-size:${L.size}px;${L.src?`background-image:url(A/${L.src});`:''}color:${L.src?'transparent':(L.cor||'#121212')};${L.italico?'font-style:italic;':''}${L.sombra?'text-shadow:10px 12px 0 rgba(0,0,0,.25);':''}">${L.txt}</div>`;
+ else if(L.tipo==='etiqueta') h+=`<div class="lbl" style="${pos}font-size:${L.size||54}px;background:${L.cor||'#E8602C'};color:${L.corTxt||'#FFF7EC'}">${L.txt}</div>`;
+ else if(L.tipo==='mao') h+=`<div class="hand" style="${pos}font-size:${L.size||90}px;color:${L.cor||'#C62A22'}">${L.txt}</div>`;
+ else if(L.tipo==='traco') h+=`<svg class="ov" width="10" height="10"><path d="${L.d}" fill="none" stroke="${L.cor||'#C62A22'}" stroke-width="${L.esp||16}" stroke-linecap="round" stroke-linejoin="round" ${L.tracejado?'stroke-dasharray="30 24"':''}/></svg>`;
+ else if(L.tipo==='fundo') h+=`<div class="${L.estilo==='escuro'?'matdark':'cork'}"></div>`;
+ else if(L.tipo==='papel') h+=`<img class="pp" src="A/${L.src}" style="${pos}width:${L.w}px">`;
+ else if(L.tipo==='bilhete') h+=`<div class="note" style="${pos}"><div style="font:${L.fonte||"900 120px/0.95 'Playfair Display',serif"};color:${L.cor||'#151210'};white-space:nowrap">${L.txt}</div></div>`;
+ else if(L.tipo==='pino') h+=PIN(L.x,L.y,L.s,L.r);
+ else if(L.tipo==='fio') h+=`<svg class="ov" width="10" height="10"><path d="${L.d}" stroke="rgba(0,0,0,.35)" stroke-width="10" fill="none" transform="translate(8 12)"/><path d="${L.d}" stroke="#A3201A" stroke-width="9" fill="none" stroke-linecap="round"/><path d="${L.d}" stroke="#E0493E" stroke-width="3" fill="none" stroke-dasharray="4 6"/></svg>`;
+ else if(L.tipo==='faixa') h+=`<div style="position:absolute;${pos}width:${L.w}px;height:${L.h}px;background:${L.cor};${L.clip?'clip-path:'+L.clip:''}"></div>`;}
+document.getElementById('L').innerHTML=h;
+window.ready=Promise.all([...document.images].map(i=>i.complete?1:new Promise(r=>{i.onload=i.onerror=r;})).concat([document.fonts.ready]));
+</script></body></html>

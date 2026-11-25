@@ -1,0 +1,200 @@
+{
+ "tema": "cortica",
+ "fim_capitulos": "f2",
+ "trechos": [
+  {
+   "id": "i1",
+   "tipo": "titulo",
+   "tag": "HISTÓRIA · O FIM DE ROMA",
+   "titulo": "O Império Romano<br>caiu mesmo em <mark class=\"hl\" data-at=\"2.6\">476?</mark>",
+   "ano": 476,
+   "imagens": [
+    {
+     "src": "colosseo.png",
+     "credito": "<b>Coliseu</b> · Piranesi, 1776 · The Met"
+    }
+   ]
+  },
+  {
+   "id": "i2",
+   "imagens": [
+    {
+     "src": "map1725c.png",
+     "credito": "<b>Mapa de Delisle</b>, 1725 · LoC"
+    },
+    {
+     "src": "inscr2.png",
+     "credito": "<b>Inscrição em latim</b> · The Met",
+     "reveal": true
+    }
+   ]
+  },
+  {
+   "id": "i3",
+   "tipo": "agenda",
+   "itens": [
+    "1 · Ravena, 476",
+    "2 · Um fim sem anúncio",
+    "3 · Constantinopla, 330–1453",
+    "4 · O que ficou de Roma",
+    "5 · Queda ou transformação?"
+   ],
+   "imagens": [
+    {
+     "src": "traiano.png",
+     "credito": "<b>Fórum de Trajano</b> · c. 1890 · LoC",
+     "polaroid": "Roma, c. 1890"
+    }
+   ]
+  },
+  {
+   "id": "C1",
+   "tipo": "capitulo",
+   "n": "CAPÍTULO 1",
+   "titulo": "Ravena, 476",
+   "fundo": "palazzo.png"
+  },
+  {
+   "id": "c1a",
+   "tipo": "mapa",
+   "vista": "med",
+   "cidades": [
+    "ravena",
+    "roma"
+   ],
+   "foco": "ravena",
+   "anotacao": "onde tudo<br>começa →",
+   "onde": "ravena",
+   "sabia": "Ravena era a capital do Império do Ocidente desde 402: era mais fácil de defender do que Roma.",
+   "imagens": [
+    {
+     "src": "pineta.png",
+     "credito": "<b>Ravena</b> · pinhal, c. 1900 · LoC",
+     "cidade": "ravena"
+    },
+    {
+     "src": "palazzo.png",
+     "credito": "<b>Palácio de Teodorico</b> · Ravena · LoC",
+     "cidade": "ravena"
+    }
+   ]
+  },
+  {
+   "id": "c1b",
+   "imagens": [
+    {
+     "src": "soldiers.png",
+     "credito": "<b>Soldados romanos diante de um imperador</b> · séc. XVI · The Met",
+     "w": 900
+    },
+    {
+     "src": "relief.png",
+     "credito": "<b>Soldado romano</b> · bronze · The Met",
+     "w": 380
+    }
+   ],
+   "notas": [
+    {
+     "html": "<div class=\"h\">QUEM DEPÔS O IMPERADOR</div><b>Odoacro</b>, líder militar a serviço de Roma"
+    }
+   ]
+  },
+  {
+   "id": "c1c",
+   "onde": "ravena",
+   "imagens": [
+    {
+     "src": "apollinare.png",
+     "credito": "<b>Mosaico de Sant’Apollinare Nuovo</b> · Ravena · LoC",
+     "w": 860
+    }
+   ],
+   "notas": [
+    {
+     "html": "<div class=\"h\">O IMPERADOR</div><b>Rômulo Augústulo</b>, um adolescente"
+    },
+    {
+     "html": "<div class=\"h\">COMO TERMINOU</div>• nenhuma batalha final<br>• afastado com uma <b>pensão</b>",
+     "at": 3.0
+    }
+   ]
+  },
+  {
+   "id": "c1d",
+   "tipo": "mapa",
+   "vista": "med",
+   "cidades": [
+    "ravena",
+    "const"
+   ],
+   "rota": 1,
+   "coroa": 1,
+   "rota_at": 1.8,
+   "palavra": [
+    "Insígnias imperiais",
+    "Os objetos que simbolizavam o poder do imperador, como o manto púrpura e o diadema."
+   ],
+   "imagens": [
+    {
+     "src": "golden.png",
+     "credito": "<b>Constantinopla</b> · c. 1890 · LoC",
+     "cidade": "const",
+     "dx": -640,
+     "dy": -600
+    }
+   ],
+   "notas": [
+    {
+     "html": "<div class=\"h\">PARA TER UMA IDEIA</div>Ravena → Constantinopla: <b>~1.400 km</b>, quase São Paulo → Salvador.",
+     "cidade": "const",
+     "dx": -1300,
+     "dy": 40,
+     "at": 3.4
+    }
+   ]
+  },
+  {
+   "id": "c1e",
+   "tipo": "jornal",
+   "nome": "CRÔNICA DO IMPÉRIO",
+   "data": "ANO 476",
+   "titulo": "O Ocidente fica sem imperador",
+   "texto": "Em Ravena, o general Odoacro afasta o jovem Rômulo Augústulo e <u class=\"sub\" data-at=\"1.2\">envia as insígnias imperiais a Constantinopla</u>. O recado: o Ocidente não precisa mais de um imperador próprio.",
+   "credito": "Ilustração do canal (não é um documento da época)"
+  },
+  {
+   "id": "R1",
+   "tipo": "recap",
+   "itens": [
+    "476: Rômulo Augústulo é deposto em Ravena",
+    "Sem uma batalha final",
+    "As insígnias vão para Constantinopla"
+   ],
+   "imagens": [
+    {
+     "src": "pineta.png",
+     "polaroid": "Ravena"
+    },
+    {
+     "src": "golden.png",
+     "polaroid": "Constantinopla"
+    }
+   ]
+  },
+  {
+   "id": "f2",
+   "tipo": "pergunta",
+   "pergunta": "Roma caiu em 476,<br>em 1453…<br>ou ainda não caiu de todo?",
+   "imagens": [
+    {
+     "src": "colosseo.png"
+    }
+   ],
+   "ano": 476
+  },
+  {
+   "id": "f3",
+   "tipo": "vinheta"
+  }
+ ]
+}
